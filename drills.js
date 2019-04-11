@@ -416,7 +416,7 @@ function bucketSort(arr, highest, lowest) {
     } else if (arr[i] === highest) {
       newArr[arr.length - 1] = arr[i];
     } else {
-      let index = difference - arr[i] - arr.length + 1;
+      let index = difference / 2 + arr.length;
       newArr[index] = arr[i];
     }
   }
